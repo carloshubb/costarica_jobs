@@ -1,22 +1,12 @@
 name: Costa Rica Jobs Scraper
 
 on:
-  # Run weekly on Mondays at 9:00 AM UTC
+  # Run daily at 9:00 AM UTC
   schedule:
-    - cron: '10 * * 1'
+    - cron: '0 9 * * *'
   
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
-    inputs:
-      scrape_mode:
-        description: 'Scraping mode'
-        required: true
-        default: 'weekly'
-        type: choice
-        options:
-          - weekly
-          - two_pages
-          - initial_full
 
 jobs:
   scrape-jobs:
