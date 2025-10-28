@@ -13,7 +13,7 @@ on:
     branches:
       - main
     paths:
-      - 'first_page_scraper.py'
+      - 'firstPage_scraper.py'
       - '.github/workflows/scrape_jobs.yml'
 
 jobs:
