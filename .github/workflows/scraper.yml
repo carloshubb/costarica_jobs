@@ -38,7 +38,7 @@ jobs:
     
     - name: Run scraper
       run: |
-        python first_page_scraper.py
+        python firstPage_scraper.py
     
     - name: Check if files changed
       id: verify_diff
