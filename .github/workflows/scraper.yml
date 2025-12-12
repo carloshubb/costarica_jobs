@@ -2,8 +2,6 @@ name: Scrape Costa Rica Jobs
 
 on:
   # Run automatically every day at 9 AM UTC
-  schedule:
-    - cron: '0 9 * * *'
   
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
